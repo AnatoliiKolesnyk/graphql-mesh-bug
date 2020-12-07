@@ -1,0 +1,35 @@
+openapi: 3.0.1
+info:
+  title: API
+  description: ""
+  contact: {}
+  version: "1.0"
+servers:
+  - url: http://localhost:7777
+security:
+  - ApiKeyAuth: []
+tags: []
+paths:
+  /test:
+    get:
+      summary: TestExplodeParameter
+      description: Endpoint that required explode == true params
+      operationId: testExplodeParameter
+      parameters:
+        - name: exploded
+          in: query
+          required: true
+          explode: false
+          style: form
+          schema:
+            type: array
+            items:
+              type: string
+      responses:
+        200:
+          description: ""
+          content:
+            application/json:
+              schema:
+                type: object
+      deprecated: false

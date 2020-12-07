@@ -1,0 +1,9 @@
+serve:
+  port: 7778
+sources:
+  - name: test-mesh-gateway
+    handler:
+      openapi:
+        source: ./openApiConfig.yaml
+        baseUrl: "http://localhost:7777"
+        includeHttpDetails: true

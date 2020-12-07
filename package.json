@@ -1,0 +1,16 @@
+{
+  "name": "mesh-bug",
+  "functionalBlock": "GESTION",
+  "version": "1.0.0",
+  "description": "Bug with `explode: true` parameter",
+  "scripts": {
+    "start:server": "node server.js",
+    "start:mesh": "graphql-mesh serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@graphql-mesh/cli": "^0.11.6",
+    "@graphql-mesh/openapi": "^0.10.1",
+    "graphql": "^15.4.0"
+  }
+}
