@@ -1,4 +1,7 @@
 Simple repo to reproduce the problem with `explode: true` query parameter.
+
+First of all, install the dependencies with `npm install`.
+
 Run this command to start the GraphQL Mesh server:
 
 `npm run start:mesh`
