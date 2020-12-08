@@ -19,7 +19,7 @@ paths:
         - name: exploded
           in: query
           required: true
-          explode: false
+          explode: true
           style: form
           schema:
             type: array
